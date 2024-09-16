@@ -1,4 +1,4 @@
-<p align="center">
+# Pirry<p align="center">
   <a href="https://builderbot.vercel.app/">
     <picture>
       <img src="https://builderbot.vercel.app/assets/thumbnail-vector.png" height="80">
