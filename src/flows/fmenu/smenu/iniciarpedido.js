@@ -19,7 +19,7 @@ import {flowOrder} from "./orden.js"
 const flowInitPedido = addKeyword(EVENTS.ACTION)
   .addAction(async (ctx, { flowDynamic, endFlow, state, provider }) => {
     await flowDynamic(
-      "Para comenzar, ¿me regalas tu nombre completo, por favor? 🙏"
+      "Para comenzar, ¿me regalas tu nombre completo, por favor? "
     );
   })
   .addAction({ capture: true }, async (ctx, { flowDynamic,gotoFlow,endFlow, state, provider }) => {

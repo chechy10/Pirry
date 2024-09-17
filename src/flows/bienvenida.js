@@ -82,7 +82,7 @@ const saludos = [
   ];
 
 const flowWelcome = addKeyword(["test",...saludos],{sensitive:true})
-    .addAnswer("🍕 ¡Hola, bienvenid@ a PIRY'S PIZZA! 🍕")
+    .addAnswer("🍕 ¡Hola, bienvenid@ a PIRRY'S PIZZA! 🍕")
     .addAnswer("¿Qué te gustaría hacer hoy?\n🔸*1️⃣* Menú\n🔸*2️⃣* Sobre nosotros")
     .addAction(
         { capture: true, sensitive: true },
