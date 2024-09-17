@@ -64,7 +64,7 @@ const flowMetod = addKeyword(EVENTS.ACTION)
           await flowDynamic("Enseguida un asesor te indicará el monto final. ¡Por favor, espera un momento! 🙏")          
         }else if(savedType==="domicilio"){
           await flowDynamic(
-            "Recuerda tener el monto exacto listo. Nuestro motorizado se comunicará contigo en cuanto llegue al lugar de entrega🛵\nGracias por preferir PIRY'S PIZZA 🍕, ¡esperamos que disfrutes tu pedido!"
+            "Recuerda tener el monto exacto listo. Nuestro motorizado se comunicará contigo en cuanto llegue al lugar de entrega🛵\nGracias por preferir PIRRY'S PIZZA 🍕, ¡esperamos que disfrutes tu pedido!"
           );
         }
 
@@ -73,7 +73,7 @@ const flowMetod = addKeyword(EVENTS.ACTION)
       } else if (response === "2") {
         await state.update({ pm: "Transferencia" });
         await flowDynamic(
-          "💵 Si elegiste transferencia, nuestros canales de psago son: Ahorros Bancolombia No.31004503115 \n Nequi Código Qr:"
+          "💵 Si elegiste transferencia, nuestros canales de pago son: Ahorros Bancolombia No.31004503115 \n Nequi Código Qr:"
         );
         await provider.sendMedia(ctx.key.remoteJid, "./src/assets/payqr.jpg");
         await flowDynamic("👌 ¡IMPORTANTE! *Recuerda enviarnos tu comprobante de pago*, *¡Gracias por tu preferencia!* 🤗")
