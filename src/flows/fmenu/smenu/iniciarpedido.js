@@ -36,7 +36,7 @@ const flowInitPedido = addKeyword(EVENTS.ACTION)
     );
     
     await flowDynamic(
-      `${savedName} , ✨ Excelente, ahora indícanos los detalles de tu pedido:\nProducto🍕\nTamaño📏\nSabor🧀\nY si deseas la promoción de la gaseosa (aplica de lunes a viernes). Uva, Manzana, Colombiana o Pepsi.🥤`
+     `${savedName} , ✨ ¡Ahora indícanos los detalles de tu pedido! 🍕👇\nProducto: ¿Qué deseas?\nTamaño: 📏\nSabor: 🧀\n¿Te gustaría la promoción de la gaseosa? *(Aplica de lunes a viernes)*\nPizza personal: Incluye *Coca Cola 400 ml*\nA partir de la pizza mediana puedes elegir una *Econolitro* de Uva, Manzana, Colombiana o Pepsi. 🥤`
     ); 
     await flowDynamic("(RECUERDA ESCRIBIR TODO EN UN SÓLO PÁRRAFO)😉‼")
     return gotoFlow(flowOrder)
