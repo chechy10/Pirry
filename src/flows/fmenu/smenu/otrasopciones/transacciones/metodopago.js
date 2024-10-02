@@ -60,7 +60,6 @@ const flowMetod = addKeyword(EVENTS.ACTION)
         await state.update({ pm: "Efectivo" });
         const savedType = await state.get("type").toLowerCase()??null;
         if(savedType==="local"){
-          await flowDynamic("👌 ¡Entendido! Te esperamos en caja para hacer la entrega de tu producto, *¡Gracias por tu preferencia!* 🤗")
           await flowDynamic("Enseguida un asesor te indicará el monto final. ¡Por favor, espera un momento! 🙏")          
         }else if(savedType==="domicilio"){
           await flowDynamic(
