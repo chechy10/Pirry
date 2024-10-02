@@ -28,7 +28,7 @@ const flowHogar = addKeyword(EVENTS.ACTION)
       const savedNumber = await state.get("number");
       const savedAddress = await state.get("address");
       await flowDynamic(
-        `📍 ¿Podrías confirmar tu dirección ${savedName}?\nTu dirección de entrega es: ${savedAddress}\n\n*Por favor, envíanos tu ubicación actual mediante la opción de localización en WhatsApp*`
+        `*Por favor, envíanos tu ubicación actual mediante la opción de localización en WhatsApp*`
       );
     }
   )
