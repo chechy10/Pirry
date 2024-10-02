@@ -43,9 +43,6 @@ const flowHogar = addKeyword(EVENTS.ACTION)
 
       if(ctx.body.includes("_event_location_")){
         await flowDynamic(
-          "👌 ¡Todo listo! confirmanos que los datos previamente enviados son los correctos"
-        );
-        await flowDynamic(
           "🔸 Dime *SI* para confirmar o *NO* si necesitas corregirlo.`"
         )
       }else{
