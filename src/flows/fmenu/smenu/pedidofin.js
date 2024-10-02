@@ -41,9 +41,6 @@ const flowpedidofin = addKeyword(EVENTS.ACTION)
       if (seleccionado === "1") {
         await state.update({ type: "Local" });
         await flowDynamic(
-          "🏪 ¡Te esperamos en nuestra tienda!:📍Cra,56A No.10B Sur - 33 Guayabal. La Colinita (PARQUE DEL HG)"
-        );
-        await flowDynamic(
           "🛵 ¡Perfecto! Tu pedido será entregado en un tiempo estimado de 30 a 40 minutos\nNos comunicaremos contigo tan pronto esté listo."
         );
         await provider.vendor.chatModify(
