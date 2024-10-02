@@ -39,9 +39,6 @@ const flowOrder = addKeyword(EVENTS.ACTION)
       const number = ctx.from;
 
       if (response === "si") {
-        await flowDynamic(
-          "📍 Todo listo. ¿Cómo prefieres recibir tu pedido?"
-        );
         return gotoFlow(flowpedidofin);
         //console.log(savedNumber);
       } else if (response === "no") {
