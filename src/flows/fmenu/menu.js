@@ -31,7 +31,6 @@ const flowMenu = addKeyword(EVENTS.ACTION)
         )
 
         if(seleccionado ==="si"){
-            await flowDynamic("📝 ¡Vamos a empezar con tu pedido! 🍕")
             return gotoFlow(flowInitPedido)
         }else if(seleccionado ==="no"){
             return endFlow("Ok, recuerda que cuando estés listo puedes escribirnos nuevamente🙌")
