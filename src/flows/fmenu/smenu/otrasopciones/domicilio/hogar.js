@@ -43,7 +43,7 @@ const flowHogar = addKeyword(EVENTS.ACTION)
 
       if(ctx.body.includes("_event_location_")){
         await flowDynamic(
-          "🔸 Dime *SI* para confirmar o *NO* si necesitas corregirlo.`"
+          "🔸 Dime *SI* para continuar"
         )
       }else{
         return fallBack("❗ Parece que no recibimos la ubicación correcta\nPor favor, envíanos tu ubicación actual para continuar.")
